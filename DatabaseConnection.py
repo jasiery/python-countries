@@ -18,3 +18,7 @@ world = mysql.connector.connect(
 cursorWorld = world.cursor() #cursor object for the selected database
 cursorWorld.execute("SELECT Code, Name, Continent FROM country") #execute any sql script
 queryResult = cursorWorld.fetchall() #fetch all rows from cursorWorld executed script
+
+sql = "INSERT INTO etracker_user (user_username, user_password) VALUES ('adi', 'adi password')"
+cursorWorld.execute(sql)
+world.commit()
