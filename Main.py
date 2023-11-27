@@ -16,8 +16,17 @@ def main():
     # for eachCountry in countries:
     #     print(eachCountry.getName())
 
+    # user = InsertToUser()
+    # user.insertUser("adi-pogi", "jai-cute")
+
+    print('-----REGISTRATION-----')
+    print('Enter username : ')
+    username = input()
+    print('Enter password : ')
+    password = input()
+
     user = InsertToUser()
-    user.insertUser("adi-pogi", "jai-cute")
+    user.insertUser(username, password)
     
 
 if __name__ == "__main__":
